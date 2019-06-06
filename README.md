@@ -19,4 +19,4 @@ layer_size = [n_input, 128, 128, 128, n_classes]
   <img src="https://raw.githubusercontent.com/KaiFabi/NumpyMultilayerPerceptron/raw/master/fashion_mnist_weights.png" height="224px">
 </div>
 
-![image](https://raw.githubusercontent.com/KaiFabi/NumpyMultilayerPerceptron/raw/master/mnist_weights.png)
+![image](https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/fashion_mnist_weights.png)
