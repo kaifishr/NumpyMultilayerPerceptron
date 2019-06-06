@@ -18,8 +18,8 @@ Here are some results from a short run of 100 epochs for both, the MNIST and Fas
 The resulting graphs show the loss and accuracy for the evaluation dataset. In case of the Fashion-MNIST dataset the plots, loss and accuracy show tendencies of over-fitting. This shows, that the network starts to remember the training data and performes worse with new data such as the evaluation and test dataset.
 
 <div align="center">
-<img src="https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/mnist_eval_loss.png" height="350">
-<img src="https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/mnist_eval_accuracy.png" height="350">
+<img src="https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/mnist_eval_loss.png" height="300">
+<img src="https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/mnist_eval_accuracy.png" height="300">
 </div>
 
 <div align="center">
