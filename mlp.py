@@ -139,7 +139,7 @@ x_train, y_train, x_eval, y_eval, x_test, y_test, n_classes, n_input = data.get_
 
 # Training parameters
 learning_rate = 0.1
-batch_size = 32
+batch_size = 64
 epochs = 100
 
 # Network configuration
