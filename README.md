@@ -14,3 +14,7 @@ epochs = 100
 layer_size = [n_input, 128, 128, 128, n_classes]
 ````
 
+<div align="center">
+ <img src="https://raw.githubusercontent.com/KaiFabi/NumpyMultilayerPerceptron/master/mnist_weights.png" height="224px">
+  <img src="https://raw.githubusercontent.com/KaiFabi/NumpyMultilayerPerceptron/master/fashion_mnist_weights.png" height="224px">
+</div>
