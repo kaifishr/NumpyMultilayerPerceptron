@@ -7,12 +7,6 @@ from scipy.special import expit # numerically stable sigmoid function
 # Seed
 np.random.seed(seed=73214)
 
-# Normalize data
-def normalize(X):
-    X_min = np.min(X, axis=1, keepdims=True)
-    X_max = np.max(X, axis=1, keepdims=True)
-    return (X - X_min) / (X_max - X_min)
-
 # Activation functions
 def sigma(x):
     return expit(x)
@@ -144,9 +138,9 @@ class NeuralNetwork(object):
 x_train, y_train, x_eval, y_eval, x_test, y_test, n_classes, n_input = data.get_data(dataset="mnist", norm=True, one_hot=True)
 
 # Training parameters
-learning_rate = 0.05
-batch_size = 64
-epochs = 1000
+learning_rate = 0.1
+batch_size = 32
+epochs = 100
 
 # Network configuration
 network_config = [n_input, 128, n_classes]
