@@ -1,6 +1,6 @@
 # NumpyMultilayerPerceptron
 
-This implementation of a Multilayer Perceptron network was written in Python using only Numpy. The network can process any input represented as an array. Here, the performance of this implementation is checked using the MNIST and Fashion-MNIST dataset. The weights and biases of the network are optimized using the simplest form of stochastic gradient descent.
+This implementation of a Multilayer Perceptron network was written in Python using Numpy. The network can process any input represented as an array. Here, the performance of this implementation is checked using the MNIST and Fashion-MNIST dataset. Both dataset can be downloaded [here (MNIST)](http://yann.lecun.com/exdb/mnist/) and [here (Fashion-MNISt)](https://github.com/zalandoresearch/fashion-mnist/tree/master/data/fashion). The weights and biases of the network are optimized using the simplest form of stochastic gradient descent.
 
 The network takes the following parameters for training `learning_rate`, `batch_size`, `epochs`. The network's architecture (depth and width) is defined by `layer_size` which represents a list of integers. Here, the following training parameters are used:
 
