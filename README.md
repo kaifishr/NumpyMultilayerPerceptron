@@ -30,6 +30,6 @@ The resulting graphs show the loss and accuracy for the evaluation dataset. In c
 The weights that connect the input with the first hidden layer can be visualized and can help to better understand what the network learned during training.
 
 <div align="center">
-<img src="https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/mnist_weights.png" height="224" width="224">
-<img src="https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/fashion_mnist_weights.png" height="224" width="224">
+<img src="https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/mnist_weights.png" height="320" width="320">
+<img src="https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/fashion_mnist_weights.png" height="320" width="320">
 </div>
