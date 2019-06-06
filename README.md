@@ -11,9 +11,10 @@ batch_size = 64
 epochs = 100
 
 # Network architecture
-layer_size = [n_input, 128, 128, 128, n_classes]
+network_config = [n_input, 128, 128, 128, n_classes]
+
 ````
-Here are some results for a three-layered network with 64, 128 and 256 neurons per layer trained for both, the MNIST and Fashion-MNIST dataset and 100 epochs. The largest network achieved the highest accuracy of 98.09% for the MNIST and 89.69% for the Fashion-MNIST dataset.
+Here are some results for a three-layered network with 64, 128 and 256 neurons per layer trained for both, the MNIST and Fashion-MNIST dataset and 100 epochs. The learning rate was set to 0.1 and a batch size of 64 images was used. The largest network achieved the highest accuracy of 98.09% for the MNIST and 89.69% for the Fashion-MNIST dataset.
 
 The resulting graphs show the loss and accuracy for the evaluation dataset. In case of the Fashion-MNIST dataset the plots, loss and accuracy show tendencies of over-fitting. This shows, that the network starts to remember the training data and performes worse with new data such as the evaluation and test dataset.
 
