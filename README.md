@@ -18,13 +18,13 @@ Here are some results for a three-layered network with 64, 128 and 256 neurons p
 
 The resulting graphs show the loss and accuracy for the evaluation dataset. In case of the Fashion-MNIST dataset the plots, loss and accuracy show tendencies of over-fitting. This shows, that the network starts to remember the training data and performes worse with new data such as the evaluation and test dataset.
 
-# MNIST:
+**MNIST:**
 <div align="center">
 <img src="https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/mnist_eval_loss.png" height="320">
 <img src="https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/mnist_eval_accuracy.png" height="320">
 </div>
 
-# Fashion-MNIST: 
+**Fashion-MNIST:**
 <div align="center">
 <img src="https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/fmnist_eval_loss.png" height="320">
 <img src="https://github.com/KaiFabi/NumpyMultilayerPerceptron/blob/master/fmnist_eval_accuracy.png" height="320">
