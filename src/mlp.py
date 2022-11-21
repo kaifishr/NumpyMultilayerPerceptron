@@ -124,19 +124,21 @@ class NeuralNetwork(object):
         plt.savefig('weights_{}.png'.format(epoch), dpi=150)
         plt.close()
 
-# Load data
-x_train, y_train, x_valid, y_valid, x_test, y_test, n_classes, n_input = data.get_data(dataset="mnist", norm=True, one_hot=True)
 
-# Training parameters
-learning_rate = 0.2
-batch_size = 256
-epochs = 1000
+if __name__ == "__main__":
+    # Load data
+    x_train, y_train, x_valid, y_valid, x_test, y_test, n_classes, n_input = data.get_data(dataset="mnist", norm=True, one_hot=True, auto=True)
 
-# Network configuration
-network_config = (n_input,) + 3*(128,) + (n_classes,)
+    # Training parameters
+    learning_rate = 0.2
+    batch_size = 256
+    epochs = 1000
 
-# Initialize network
-network = NeuralNetwork(network_config)
+    # Network configuration
+    network_config = (n_input,) + 3*(128,) + (n_classes,)
 
-# Start training
-network.optimize(x_train, y_train, x_valid, y_valid, x_test, y_test, epochs, batch_size, learning_rate)
+    # Initialize network
+    network = NeuralNetwork(network_config)
+
+    # Start training
+    network.optimize(x_train, y_train, x_valid, y_valid, x_test, y_test, epochs, batch_size, learning_rate)

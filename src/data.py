@@ -1,6 +1,7 @@
 import os
 import struct
 import numpy as np
+from tensorflow.keras.datasets import mnist
 
 def extract_data(img_path, lbl_path):
     with open(lbl_path, 'rb') as flbl:
@@ -15,17 +16,21 @@ def extract_data(img_path, lbl_path):
 def normalize(X):
     return 2.*(X/255.-0.5)
 
-def get_data(dataset, norm, one_hot):
+def get_data(dataset, norm, one_hot, auto: bool):
 
-    path = "./data/" + dataset
-    file_path_train_img = os.path.join(path, 'train-images-idx3-ubyte')
-    file_path_train_lbl = os.path.join(path, 'train-labels-idx1-ubyte')
-    file_path_test_img = os.path.join(path, 't10k-images-idx3-ubyte')
-    file_path_test_lbl = os.path.join(path, 't10k-labels-idx1-ubyte')
-    
-    # Extract data from files
-    img_train, lbl_train = extract_data(file_path_train_img, file_path_train_lbl)
-    img_test, lbl_test = extract_data(file_path_test_img, file_path_test_lbl)
+    # Auto import Dataset
+    if not auto:
+        path = "./data/" + dataset
+        file_path_train_img = os.path.join(path, 'train-images-idx3-ubyte')
+        file_path_train_lbl = os.path.join(path, 'train-labels-idx1-ubyte')
+        file_path_test_img = os.path.join(path, 't10k-images-idx3-ubyte')
+        file_path_test_lbl = os.path.join(path, 't10k-labels-idx1-ubyte')
+
+        # Extract data from files
+        img_train, lbl_train = extract_data(file_path_train_img, file_path_train_lbl)
+        img_test, lbl_test = extract_data(file_path_test_img, file_path_test_lbl)
+    else:
+        (img_train, lbl_train), (img_test, lbl_test) = mnist.load_data()
 
     # Normalize image data
     if norm:
